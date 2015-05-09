@@ -1,0 +1,121 @@
+@import "compass/css3/";
+
+@font-face {
+    font-family: 'Angry Bird';
+    src: local('Angry Bird'), url('fonts/angrybirds-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  @include box-sizing(border-box);
+  margin: 0;
+  padding: 0;
+  font-family: 'Angry Bird', sans-serif;
+}
+
+body{
+  line-height: 26px;
+  width:100%;
+  min-height: 70%;
+  background: url('../images/background_2.png') no-repeat;
+  background-size: cover;
+  // background-position: center bottom;
+  position: relative;
+
+}
+input {
+  font-family: 'Angry Bird', san-serif;
+}
+h1{
+  padding: 10px 0;
+  font-size:16px;
+}
+
+
+.container {
+  width: 800px / 1000px * 100%;
+  margin: 0 auto;
+}
+#gamePlayArea, #gameControlArea {
+  margin: 30px 0 ;
+}
+
+.letter{
+  display: inline-block;
+  width: 45px;
+  height: 50px;
+  font-size: (30/16) * 1em;
+  line-height: 40px;
+  margin-right: 5px;
+  text-align: center;
+  color: #4FAFBA;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.box {
+  border: 3px dashed #4FAFBA;
+  background: white;
+}
+#wrongLetters, #wordString {
+  height: 60px;
+}
+#wordString span{
+  @include animation(my-animation 4s ease-in);
+}
+
+#wrongLetters {
+  position:relative;
+}
+.wrong {
+  border: 3px dashed #FE1B58;
+  background-color: white;
+  @include animation(my-animation .5s ease-in);
+}
+
+#letterField {
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 40px;
+  text-align: center;
+  display:block;
+}
+.gameTitles, #guessBox {
+  display:inline-block;
+  vertical-align: top;
+} 
+#guessBox {
+  width: 24.5%;
+}
+.gameTitles {
+  width: 75%;
+}
+
+footer {
+  // height: 150px / 718px * 100%;
+  position:relative;
+
+}
+@media (min-width: 650px)and (max-width:850px) {
+  .container{
+    padding: 0 20px/800px*100%;
+  }
+  .letter{
+
+  }
+}
+@media (min-width: 920px) {
+  .container{
+    padding: 0 20px/800px*100%;
+  }
+  .letter{
+    margin-right: 10px;
+    line-height: 50px;
+    height: 60px;
+  }
+}
+
+

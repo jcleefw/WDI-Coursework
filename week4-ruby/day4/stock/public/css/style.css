@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(32, 172, 213);
+
+  font-family: Arial, san-serif;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background: #eee;
+  color: #222;
+  padding: 30px;
+}
+
+nav ul {
+  padding: 20px;
+  background-color: indigo;
+  width: 100%;
+  margin: 0;
+}
+nav li{
+  display: inline-block;
+  padding: 0 20px;
+  color: white;
+}
+
+nav li a{
+  color: inherit;
+  text-decoration: none
+}
+
+input, button {
+  margin: 30px 0 0 0 ;
+  padding: 10px;
+  font-size:1.5em;
+  border:none;
+}
+div{
+  padding: 30px 0;
+}

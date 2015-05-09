@@ -1,0 +1,233 @@
+/* line 4, sass/gameanimation.scss */
+#startGame {
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiM5MGNjZGYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYzRmNWUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(55%, #90ccdf), color-stop(100%, #1c4f5e));
+  background-image: -moz-linear-gradient(top, #90ccdf 55%, #1c4f5e);
+  background-image: -webkit-linear-gradient(top, #90ccdf 55%, #1c4f5e);
+  background-image: linear-gradient(to bottom, #90ccdf 55%, #1c4f5e);
+  z-index: 10;
+  transition: all 1.5s linear;
+  display: block;
+}
+
+/* line 15, sass/gameanimation.scss */
+#startGame button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  font-size: 30px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNmZmU0NzEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmQ1NWYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(25%, #ffe471), color-stop(100%, #ffd55f));
+  background-image: -moz-linear-gradient(top, #ffe471 25%, #ffd55f 100%);
+  background-image: -webkit-linear-gradient(top, #ffe471 25%, #ffd55f 100%);
+  background-image: linear-gradient(to bottom, #ffe471 25%, #ffd55f 100%);
+  background-color: #ffe471;
+  -moz-box-shadow: #ffd55b -10px -39px 0px -14px inset, rgba(255, 228, 113, 0.3) 0 0 5px 15px, rgba(255, 228, 113, 0.3) 0 0 2px 30px, rgba(0, 0, 0, 0.2) 0 0 10px 5px;
+  -webkit-box-shadow: #ffd55b -10px -39px 0px -14px inset, rgba(255, 228, 113, 0.3) 0 0 5px 15px, rgba(255, 228, 113, 0.3) 0 0 2px 30px, rgba(0, 0, 0, 0.2) 0 0 10px 5px;
+  box-shadow: #ffd55b -10px -39px 0px -14px inset, rgba(255, 228, 113, 0.3) 0 0 5px 15px, rgba(255, 228, 113, 0.3) 0 0 2px 30px, rgba(0, 0, 0, 0.2) 0 0 10px 5px;
+  border: none;
+  cursor: pointer;
+}
+/* line 28, sass/gameanimation.scss */
+#startGame button:focus {
+  outline: none;
+}
+/* line 31, sass/gameanimation.scss */
+#startGame button:hover {
+  top: 51%;
+}
+/* line 34, sass/gameanimation.scss */
+#startGame button:active {
+  top: 51%;
+  -moz-box-shadow: #ffd55b 10px 39px 0px -14px inset, rgba(255, 213, 91, 0.3) 0 0 5px 15px, rgba(255, 213, 91, 0.3) 0 0 2px 30px, rgba(0, 0, 0, 0.2) 0 0 10px 5px;
+  -webkit-box-shadow: #ffd55b 10px 39px 0px -14px inset, rgba(255, 213, 91, 0.3) 0 0 5px 15px, rgba(255, 213, 91, 0.3) 0 0 2px 30px, rgba(0, 0, 0, 0.2) 0 0 10px 5px;
+  box-shadow: #ffd55b 10px 39px 0px -14px inset, rgba(255, 213, 91, 0.3) 0 0 5px 15px, rgba(255, 213, 91, 0.3) 0 0 2px 30px, rgba(0, 0, 0, 0.2) 0 0 10px 5px;
+}
+
+/* line 40, sass/gameanimation.scss */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+/* line 46, sass/gameanimation.scss */
+#red {
+  position: relative;
+  height: 250px;
+  z-index: -1;
+}
+/* line 49, sass/gameanimation.scss */
+#red img {
+  width: 18%;
+  position: absolute;
+  -moz-animation: bird-entering 3s, bird-shaking 2s infinite;
+  -webkit-animation: bird-entering 3s, bird-shaking 2s infinite;
+  animation: bird-entering 3s, bird-shaking 2s infinite;
+  left: 75%;
+  display: none;
+  bottom: 520px;
+}
+
+@-moz-keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes bird-entering {
+  from {
+    left: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  80% {
+    left: 80%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  85% {
+    left: 75%;
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    left: 77%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  92% {
+    left: 75%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  95% {
+    left: 76%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    left: 75%;
+  }
+}
+@-webkit-keyframes bird-entering {
+  from {
+    left: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  80% {
+    left: 80%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  85% {
+    left: 75%;
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    left: 77%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  92% {
+    left: 75%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  95% {
+    left: 76%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    left: 75%;
+  }
+}
+@keyframes bird-entering {
+  from {
+    left: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  80% {
+    left: 80%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  85% {
+    left: 75%;
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    left: 77%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  92% {
+    left: 75%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  95% {
+    left: 76%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    left: 75%;
+  }
+}
+@-moz-keyframes bird-shaking {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes bird-shaking {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@keyframes bird-shaking {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}

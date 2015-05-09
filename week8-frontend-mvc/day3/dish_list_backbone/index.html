@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dish List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="magic-btn">Add dish</button>
+  <div id="container">
+
+  </div>
+
+  <script id="dish-item-template" type="text/x-underscore-template">
+
+    <div class="dish-item">
+      <img src="http://placehold.it/400x400" alt="">
+      <div class="content">
+        <h2>{{title}}</h2>
+        <h4>at general assembly</h4>
+        <p><span class="count">{{starCount}}</span> stars</p>
+        <span class="star">&#9733;</span>
+      </div>
+    </div>
+
+  </script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="underscore.js"></script>
+  <script src="backbone.js"></script>
+  <script src="dish.js"></script>
+  <script src="dishes.js"></script>
+  <script src="dish_view.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+

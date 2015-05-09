@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  max-width: 900px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0 auto;
+}
+.span-1, .span-2, .span-3 {
+  min-height: 100px;
+  float:left;
+  margin-right:1.111111%; /* 10px = 10.900 = 0.011111111%*/
+}
+img{
+  float: left;
+  width: 100%;
+}
+.span-1 {
+  background-color: #fea345;
+  width: 32.222222%; /* 290px = 290/900 = 0.3222222222*/ 
+}
+.span-2 {
+  background-color: plum;
+  width: 65.5555555%;  /* 590px = 590 / 900 = 0.6555555555*/
+}
+
+.span-3{
+  background-color: pink;
+  width: 98.8888888% ; /* 890px = 890 / 900 = 0.988888888%*/
+}
+
+@media all and (max-width: 600px) {
+   .span-1 {
+    width: 98.8888888%;
+   }
+}
+

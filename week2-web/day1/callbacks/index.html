@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untitled</title>
+
+</head>
+<body>
+  
+  <script>
+
+    console.log("hello World");
+
+    // setTimeout (fn, timeout(in ms))
+
+    /*setTimeout(function() { 
+      console.log("some time later");
+    }, 5000);*/
+    
+    // setInterval (fn, delay)
+
+    var timerId = setInterval(countDown, 3000);
+
+    var i = prompt("Give me a number to start countdown.");
+
+    function countDown() {
+      console.log(i);
+      //'i'.repeat(10);
+      i--;
+
+      if(i < 0) {
+        clearInterval(timerId);
+      }
+    }
+    
+
+    console.log(timerId);
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,4 @@
+aapl,Apple Inc.,124.25
+goog,Google Inc.,542.56
+aapl,Apple Inc.,124.25
+aapl,Apple Inc.,124.25

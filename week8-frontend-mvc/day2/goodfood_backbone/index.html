@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dish</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Menu</h2>
+  </div>
+
+  <script id="dish-item-template" type="text/x-underscore-template">
+
+      <div class="dish-avatar">
+        <div class=img><img src="{{image_url}}" alt=""></div>
+        <span class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="255" height="40" viewBox="0 0 51 48">
+            <title>Five Pointed Star</title>
+            <path class="star-path" fill="white" stroke="none" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+          </svg>
+
+      </div>
+
+      <div class="dish-info">
+        <h1>{{dish_name}}</h1>
+        <p class="location">at {{location}}</p>
+        <span class="likes"><em>{{likes}}</em> stars</span>
+      </div>
+
+  </script>
+
+  <script id="add-button-template" type="text/x-underscore-template">
+    <button id="add">Add New Dish</button>
+  </script>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/underscore.js"></script>
+  <script src="scripts/backbone.js"></script>
+  <script src="scripts/app.js"></script>
+
+</body>
+</html>

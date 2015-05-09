@@ -1,0 +1,10 @@
+body{
+  width: 800px;
+  margin: 0 auto;
+  font-family: arial, san-serif;
+  border: 1px dotted #444;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+

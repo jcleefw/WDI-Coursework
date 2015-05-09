@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 12px;
+  font-family: 'Poiret One', cursive;
+
+}
+
+#container{
+  max-width: 800px;
+  margin: auto;
+  box-sizing:border-box;
+  text-align: center;
+}
+
+.left{
+  width: 50%;
+  border: 1px solid #ddd; 
+  box-sizing:border-box;
+  float: left;
+}
+
+#reset {
+  height:40px;
+  background-color: grey;
+  margin:auto;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.button {
+  height:40px;
+  margin:auto;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.right{
+  width: 50%;
+  border: 1px solid red; 
+  box-sizing:border-box;
+  height: 360px;
+  float: right;
+}
+
+img{
+  width: 80%;
+  padding: 30px;
+  -webkit-animation: rotate 5s infinite; /* Safari 4+ */
+  -moz-animation:    rotate 5s infinite; /* Fx 5+ */
+  -o-animation:      rotate 5s infinite; /* Opera 12+ */
+  animation:         rotate 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+.secondOp {
+  background-color: #edc123;
+}
+
+.secondOp a{
+  text-decoration: none;
+  color:white;
+}
+
+@-webkit-keyframes rotate { 
+  from { 
+      -webkit-transform: rotateY(0deg); 
+  } to { 
+      -webkit-transform: rotateY(360deg); 
+  }
+
+}
+

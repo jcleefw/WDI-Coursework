@@ -1,0 +1,58 @@
+body{
+  background-color: #ddd;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.hide { 
+  display:none;
+  /*visibility: hidden;*/
+}
+img{
+  width: 100%;
+}
+.showInLine {
+  display: inline;
+}
+
+.showBlock {
+  display: block;
+}
+
+.showInLineBlock {
+  display: inline-block;
+  width:50%;
+}
+
+
+.box{
+  width: 400px;
+  height: 100px;
+  border: 1px solid blue;
+  text-align: center;
+  line-height: 100px;
+}
+
+.position-static {
+  position: static;
+}
+
+.position-fixed {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

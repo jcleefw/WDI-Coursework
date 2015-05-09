@@ -1,0 +1,80 @@
+@import "compass/support";
+@import "compass/css3/";
+
+#startGame {
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  @include background-image(linear-gradient(to bottom, #90ccdf 55%, #1c4f5e));
+  z-index: 10;
+  transition: all 1.5s linear;
+  display:block;
+}
+
+#startGame button {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  font-size: 30px;
+  @include background-image(linear-gradient(to bottom, #ffe471 25%, #ffd55f 100%));
+  background-color:#ffe471;
+  @include box-shadow(#ffd55b -10px -39px 0px -14px inset, rgba(#ffe471, 0.3) 0 0 5px 15px, rgba(#ffe471, 0.3) 0 0 2px 30px, rgba(#000, 0.2) 0 0 10px 5px);
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    top:51%;
+  }
+  &:active {
+    top:51%;
+    @include box-shadow(#ffd55b 10px 39px 0px -14px inset, rgba(#ffd55b, 0.3) 0 0 5px 15px, rgba(#ffd55b, 0.3) 0 0 2px 30px, rgba(#000, 0.2) 0 0 10px 5px);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+#red {
+  position: relative;
+  height: 250px;
+  img{
+    width: 18%;
+    position: absolute;
+    @include animation( bird-entering 3s, bird-shaking 2s infinite);
+    left:75%;
+    display: none;
+    bottom: 520px;
+  }
+  z-index: -1;
+}
+
+@include keyframes(my-animation) {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@include keyframes(bird-entering) {
+  from { left:0 ; -webkit-animation-timing-function: ease-in;}
+  80% { left:80%; -webkit-animation-timing-function: ease-out; }
+  85% { left: 75%; -webkit-animation-timing-function: ease-in; }
+  90% { left: 77%; -webkit-animation-timing-function: ease-out; }
+  92% { left: 75%; -webkit-animation-timing-function: ease-out; }
+  95% { left: 76%; -webkit-animation-timing-function: ease-out; }
+  to { left:75%;}
+
+    
+}
+@include keyframes(bird-shaking) {
+  0%{ -webkit-transform: rotate(0deg); }
+  50%{ -webkit-transform: rotate(10deg); }
+  100%{ -webkit-transform: rotate(0deg); }
+}

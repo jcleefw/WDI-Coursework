@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Goodfoodhunting</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if logged_in? %>
+  logged in as <%= current_user.email %>
+  <%= form_tag '/logout', method: :delete do %>
+    <button>logout</button>
+  <% end %>
+<% else %>
+  <%= link_to 'Login', login_path %>
+<% end %>
+
+<%= link_to 'dishes', root_path %>
+<%= link_to 'tags', '/tags' %>
+<%= link_to 'users', '/users' %>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Angry Bird';
+  src: local("Angry Bird"), url("fonts/angrybirds-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 10, sass/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Angry Bird', sans-serif;
+}
+
+/* line 17, sass/style.scss */
+body {
+  line-height: 26px;
+  width: 100%;
+  min-height: 70%;
+  background: url("../images/background_2.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 27, sass/style.scss */
+input {
+  font-family: 'Angry Bird', san-serif;
+}
+
+/* line 30, sass/style.scss */
+h1 {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+/* line 36, sass/style.scss */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 40, sass/style.scss */
+#gamePlayArea, #gameControlArea {
+  margin: 30px 0;
+}
+
+/* line 44, sass/style.scss */
+.letter {
+  display: inline-block;
+  width: 45px;
+  height: 50px;
+  font-size: 1.875em;
+  line-height: 40px;
+  margin-right: 5px;
+  text-align: center;
+  color: #4FAFBA;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+/* line 57, sass/style.scss */
+.box {
+  border: 3px dashed #4FAFBA;
+  background: white;
+}
+
+/* line 61, sass/style.scss */
+#wrongLetters, #wordString {
+  height: 60px;
+}
+
+/* line 64, sass/style.scss */
+#wordString span {
+  -moz-animation: my-animation 4s ease-in;
+  -webkit-animation: my-animation 4s ease-in;
+  animation: my-animation 4s ease-in;
+}
+
+/* line 68, sass/style.scss */
+#wrongLetters {
+  position: relative;
+}
+
+/* line 71, sass/style.scss */
+.wrong {
+  border: 3px dashed #FE1B58;
+  background-color: white;
+  -moz-animation: my-animation 0.5s ease-in;
+  -webkit-animation: my-animation 0.5s ease-in;
+  animation: my-animation 0.5s ease-in;
+}
+
+/* line 77, sass/style.scss */
+#letterField {
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 40px;
+  text-align: center;
+  display: block;
+}
+
+/* line 86, sass/style.scss */
+.gameTitles, #guessBox {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 90, sass/style.scss */
+#guessBox {
+  width: 24.5%;
+}
+
+/* line 93, sass/style.scss */
+.gameTitles {
+  width: 75%;
+}
+
+/* line 97, sass/style.scss */
+footer {
+  position: relative;
+}
+
+@media (min-width: 650px) and (max-width: 850px) {
+  /* line 103, sass/style.scss */
+  .container {
+    padding: 0 2.5%;
+  }
+}
+@media (min-width: 920px) {
+  /* line 111, sass/style.scss */
+  .container {
+    padding: 0 2.5%;
+  }
+
+  /* line 114, sass/style.scss */
+  .letter {
+    margin-right: 10px;
+    line-height: 50px;
+    height: 60px;
+  }
+}

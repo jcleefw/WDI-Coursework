@@ -1,0 +1,12 @@
+<h2>All Tags</h2>
+
+<% @tags.each do |tag| %>
+  <li>
+    <a href="<%= url_for [:edit, tag] %>"><%= tag.name %></a>
+    <span><%= link_to 'edit', [:edit, tag], :class=>'edit' %></span>
+
+    <span><%= form_for tag, :method => :delete, :html => {:class=>'delete_tag'} do |f|%>
+      <%= f.submit 'Delete' %>
+    <% end %></span>
+  </li>
+<% end %>

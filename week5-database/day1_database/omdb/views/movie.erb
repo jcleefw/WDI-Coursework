@@ -1,0 +1,14 @@
+<div class="left">
+  <p>Title:    <%=  @movie_selected['title']    %></p>
+  <p>Year:     <%=  @movie_selected['year']     %></p>
+  <p>Genre:    <%=  @movie_selected['genre']    %></p>
+  <p>Actors:   <%=  @movie_selected['actors']   %></p>
+  <p>Plot:     <%=  @movie_selected['plot']     %></p>
+  <p>Director: <%=  @movie_selected['director'] %></p>
+  <p>Country:  <%=  @movie_selected['country']  %></p>
+  <p>IMDB ID:  <%=  @movie_selected['imdbid']   %></p>
+</div>
+<div class="right">
+  <img src="<%= @movie_selected['poster'] %>" alt="">
+</div>
+

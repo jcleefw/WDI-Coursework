@@ -1,0 +1,6 @@
+<h1><%= @dish.title %></h1>
+
+<img src="<%= @dish.photo_url %>" alt="">
+<%= @dish.tags.pluck(:name).join(',') %>
+<!-- is the same with pluck -->
+<%#= @dish.tags.map {|x| x.name } %>

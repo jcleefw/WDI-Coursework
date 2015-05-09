@@ -1,0 +1,31 @@
+<!--
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<label for="">title</label>
+<input type="text" name="title" value="<%= @dish.title %>">
+
+<label for="">image_url</label>
+<input type="text" name="image_url" value="<%= @dish.image_url %>"> -->
+
+<%= form_for @dish do |f| %>
+
+
+  <%= f.label :title, :id=> 'some_id' %>
+  <%= f.text_field :title %>
+
+  <label for="">Upload File</label>
+  <%= f.file_field :photo %>
+
+  <label for="">Remote Photo URL</label>
+  <%= f.text_field :remote_photo_url %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%# Tag.all.each do |tag| %>
+    <%#= f.check_box :tag_ids %>
+  <%# end %>
+  <!-- this works the same as each loop -->
+  <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
+
+  <%= f.submit %>
+<% end %>

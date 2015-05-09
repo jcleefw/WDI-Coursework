@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 900px;
+  background-color: #facbae;
+  margin: 0;
+}
+
+.container div:first-child {
+  width:50%;
+  display: inline-block;
+  border: 1px solid red;
+}
+
+.container div:last-child {
+  width:50%;
+  display: inline-block;
+  border: 1px solid blue;
+}

@@ -1,0 +1,36 @@
+<h1>Cody Perry Students</h1>
+
+<ul class="students">
+
+</ul>
+
+<script>
+
+   /* $.getJSON methods */
+  // var displayResult = function (data) {
+
+  //   $.each(data, function (key, value) {
+  //     $('.students').append($('<li>').text(value.name));
+  //   });
+  // }
+
+  // $.getJSON ('/api/students').done(displayResult);
+
+
+  /* Solution 2 with $.ajax */
+  var options = {
+    url: '/api/students',
+    dataType: 'json'
+  }
+
+  var list;
+
+  $.ajax(options).done(function(data){
+    //console.log(students);
+    list = data;
+    //console.log(list);
+    $.each(data, function (key, value) {
+      $('.students').append($('<li>').text(value.name));
+    });
+  });
+</script>

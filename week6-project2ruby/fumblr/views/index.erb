@@ -1,0 +1,50 @@
+<h1>hello world</h1>
+
+<p><a href="/posts/new">new post</a></p>
+
+<form id="new-post-form" action="/posts" method="post">
+  <p><input type="text" id="title"></p>
+  <p><textarea name="" id="" cols="30" rows="10"></textarea></p>
+  <button>New Post</button>
+</form>
+
+<% @posts.each do |post| %>
+  <p><%= post.title %></p>
+<% end %>
+
+<script>
+  var createPost = function (e) {
+    e.preventDefault();
+    console.log('creating post...');
+
+    $.ajax({
+      url: '/api/posts',
+      method: 'post',
+      data: { title: $('#title').val() }
+    }).done(function(returnedData) {  // done will only be display when it is successfully added
+      console.log(returnedData);
+      $('body').append('<p>' + returnedData.title + '</p>');
+    }).fail(function() { // this will display if it fails
+      console.log("Fail to create post.");
+    });
+  };
+
+  $('#new-post-form').on('submit', createPost);
+</script>
+
+<!-- <button>magic button</button>
+
+<script>
+  var doMagic = function () {
+    $.ajax({
+      url: '/api/posts',
+      dataType: 'json'
+    }).done(function(posts) {
+      for(var i = 0; i < posts.length; i++) {
+        var $newPost = $('<p>').html(posts[i].title);
+        $('body').append($newPost);
+      }
+    });
+  };
+ $('button').on('click', doMagic);
+</script> -->

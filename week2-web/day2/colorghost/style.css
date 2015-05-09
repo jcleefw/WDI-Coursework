@@ -1,0 +1,8 @@
+#random {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border: 1px solid grey;
+  margin-top: 20px;
+  background-color: rgb(214,173,151);
+}

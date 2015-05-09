@@ -1,0 +1,23 @@
+<div class="movie-results">
+  <h1>Movie Results</h1>
+  <% @result["Search"].each do | movie, value | %>
+    <div>
+      <form action="/movie" method="post">
+        <button>
+          <h3><%= movie["Title"] %></h3>
+          <div class="left">
+            <ul>
+              <% movie.each do | field, value| %>
+                <li><%= field %> : <%= value %></li>
+              <% end %>
+            </ul>
+          </div>
+
+          <input type="hidden" name="movie_imdbID" value="<%= movie["imdbID"] %>">
+          <input type="hidden" name="movie_selected" value="<%= movie["Title"] %>">
+        </button>
+      </form>
+
+    </div>
+  <% end %>
+</div>

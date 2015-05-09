@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forms </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>HTML5 Form inputs examples</h1>
+    <form action="#">
+      <p>
+        <label for="query">Things to search for</label>
+        <input type="search" name="query" id="query" placeholder="hotdogs">
+      </p>
+
+      <p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="code perry">
+      </p>
+      <p>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="101">
+      </p>
+      <p>
+        <label for="myspacepage">Myspace page:</label>
+        <input type="url" name="myspacepage" id="myspacepage">
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      </p>
+      <p>
+        <label for="avatar">Avatar:</label>
+        <input type="file" name="avatar" id="avatar">
+      </p>
+      <p>
+        <label for="letter_home">Letter to home:</label>
+        <textarea name="letter_home" id="letter_home" placeholder="dear mom and dad" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <label for="dob">Date of birth:</label>
+        <input type="date" name="dob" id="dob">
+      </p>
+      <p>
+        select your vices:
+        <label for="cigars">Cigars</label>
+        <input type="checkbox" name="vices" id="cigars" value="cigars">
+
+        <label for="wine">Wine</label>
+        <input type="checkbox" id="wine" name="vices" value="wine">
+
+        <label for="ice">Ice</label>
+        <input type="checkbox" id="ice" name="vices" value="ice">
+      </p>
+
+      <p>
+        select you favourtie vice:
+        <label for="fav-vices">Favourite Vice:</label>
+        <select name="fav-vices" id="fav-vices">
+          <option value="cigars">Cigars</option>
+          <option value="wine">Wine</option>
+          <option value="ice">Ice</option>
+        </select>
+      </p>
+      <button>Submit</button>
+    </form>
+    
+  </div>
+</body>
+</html>

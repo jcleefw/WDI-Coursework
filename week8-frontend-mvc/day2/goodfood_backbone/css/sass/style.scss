@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+  font-family: Arial, san-serif;
+}
+
+.container {
+  padding: 20px 20px;
+}
+.addDish {
+  button{
+    padding: 15px;
+    border: none;
+    background-color: #94CA37;
+    margin-top: 10px;
+  }
+}
+
+.dish {
+  border-radius: 10px;
+  background-color: #444;
+  min-width: 250px;
+  width: 23.5%;
+  color: white;
+  display:inline-block;
+  margin: 20px 5px 10px;
+  &:hover .star{
+    display: block;
+
+  }
+}
+.star {
+  display:none;
+  position: absolute;
+  top:10px;
+  right: 10px;
+  svg {
+    cursor: pointer;
+    width: 30px;
+    &:hover .star-path {
+      fill: yellow;
+    }
+  }
+}
+
+.dish-avatar {
+  border-radius: 10px 10px 0 0 ;
+  width: 100%;
+  height: 250px;
+  background-color: #ddd;
+  position: relative;
+
+  .img img{
+    width:100%;
+    height:250px;
+    border-radius: 10px 10px 0 0 ;
+  }
+}
+
+.dish-info {
+  padding: 10px;
+  h1 {
+    font-size: 1.2em;
+    color: #94CA37;
+  }
+  .location {
+    font-size: .8em;
+  }
+  .likes{
+    color: #eee;
+    font-size: .7em;
+    font-weight: normal;
+    text-align: right;
+    display:block;
+    padding-top: 10px;
+  }
+}

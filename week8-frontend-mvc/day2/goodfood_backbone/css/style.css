@@ -1,0 +1,96 @@
+/* line 1, sass/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, sass/style.scss */
+body {
+  margin: 0 auto;
+  width: 90%;
+  font-family: Arial, san-serif;
+}
+
+/* line 13, sass/style.scss */
+.container {
+  padding: 20px 20px;
+}
+
+/* line 17, sass/style.scss */
+.addDish button {
+  padding: 15px;
+  border: none;
+  background-color: #94CA37;
+  margin-top: 10px;
+}
+
+/* line 25, sass/style.scss */
+.dish {
+  border-radius: 10px;
+  background-color: #444;
+  min-width: 250px;
+  width: 23.5%;
+  color: white;
+  display: inline-block;
+  margin: 20px 5px 10px;
+}
+/* line 33, sass/style.scss */
+.dish:hover .star {
+  display: block;
+}
+
+/* line 38, sass/style.scss */
+.star {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 43, sass/style.scss */
+.star svg {
+  cursor: pointer;
+  width: 30px;
+}
+/* line 46, sass/style.scss */
+.star svg:hover .star-path {
+  fill: yellow;
+}
+
+/* line 52, sass/style.scss */
+.dish-avatar {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 250px;
+  background-color: #ddd;
+  position: relative;
+}
+/* line 59, sass/style.scss */
+.dish-avatar .img img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* line 66, sass/style.scss */
+.dish-info {
+  padding: 10px;
+}
+/* line 68, sass/style.scss */
+.dish-info h1 {
+  font-size: 1.2em;
+  color: #94CA37;
+}
+/* line 72, sass/style.scss */
+.dish-info .location {
+  font-size: .8em;
+}
+/* line 75, sass/style.scss */
+.dish-info .likes {
+  color: #eee;
+  font-size: .7em;
+  font-weight: normal;
+  text-align: right;
+  display: block;
+  padding-top: 10px;
+}

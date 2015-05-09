@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+main, section{
+  margin:auto;
+}
+header{
+  width:100%;
+  margin-top: 50px;
+  text-align: center;
+
+}
+#logo{
+  padding: 20px;
+}
+
+#logo img {
+  width: 50%;
+
+}
+
+section {
+  width:100%;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  position:relative;
+}
+
+input[type="search"]{
+  width:85%;
+  height: 40px;
+  padding-left:10px;
+  border: 1px solid #bbb;
+  line-height: 1.1em;
+  font-size: 1.1em;
+  display:inline-block;
+  margin: 0;
+}
+
+input:focus{
+  outline:none;
+}
+
+.submit {
+  display: inline-block;
+  width: 10%;
+  height: 40px;
+  background-color: #45bcea;
+  border: none;
+  vertical-align:top;
+  position: relative;
+}
+
+.submit:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABqUlE…e5qHxD8xIuLFxCTc0nqhHTM1B46W6RjWu4UaZxR3uMfUDvUqknv4oBC4AAAAASUVORK5CYII=') no-repeat center center;
+  content: '';
+  position:absolute;
+}

@@ -1,0 +1,18 @@
+<div class="home">
+  <h3>Enter movie name to search</h3>
+  <form action="/search" method="post">
+    <input type="text" name="name">
+    <button>Search</button>
+  </form>
+  <% binding.pry %>
+  <ul >
+    <% @latest_search.each do | key, value| %>
+    <li>
+      <img class="latest_search"src="<%=  key.poster%>">
+    </li>
+
+    <% end %>
+  </ul>
+</div>
+
+
